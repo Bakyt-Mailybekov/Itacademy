@@ -11,7 +11,7 @@ class Alumni(models.Model):
 	picture_alumni = models.ImageField(upload_to='', max_length=255, blank=True, null=True)
 
 	def __str__(self):
-		return self.last_name_alumni
+		return self.first_name_alumni + " " + self.last_name_alumni
 
 
 class Project(models.Model):
@@ -20,3 +20,18 @@ class Project(models.Model):
 	picture_project = models.ImageField(upload_to='', max_length=50, blank=True, null=True)
 	#alumni_id = models.ForeignKey(Alumni, on_delete=CASCADE)
 
+	def __str__(self):
+		return self.name_project
+
+
+class Year(models.Model):
+	YEAR_CHOICES = (
+		('2016-2017', '2016-2017'),
+		('2017-2018', '2017-2018'),
+		('2018-2019', '2018-2019'),
+		('2019-2020', '2019-2020'),
+	)
+	year = models.CharField(max_length=50, choices = YEAR_CHOICES)
+
+	def __str__(self):
+		return self.year
