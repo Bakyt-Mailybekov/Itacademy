@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT-academy</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/all-styles.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/header-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/body-style.css'%}">
+</head>
+<body>
+	<!--Header-->
+	<div class="wrap">	
+		<div class="header">
+			<a href=""><img class="logo" src="{% static 'kssdasite/logo.png'%}" alt="IT-academy"></a>
+			<!--Navbar-->
+		    <ul>
+				<li><a href="#">ГЛАВНАЯ</a></li>	
+				<li><a href="#">О НАС</a></li>	
+				<li><a href="#">СТАТИСТИКА</a></li>	
+				<li><a href="#">РАБОТАТЬ С НАМИ</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>	
+			</ul>
+		</div>
+	<!--Header-->
+	<!--Mian/body-->
+		<div class="main">
+			<div class="first-block" data-vide-bg="{% static 'kssdasite/bg-video/Fade-To-Black' %}">
+				<div class="main-text" >
+				<h1>WELLCOME</h1>
+				<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
+				</div>
+				<div class="first-bg-img"></div>
+			</div>
+			<div class="second-block about-us">
+				<div class="text-about-us">
+					<h2>IT Академия</h2>
+					<p>“IT Академия” - проект Кыргызской ассоциации разработчиков программного обеспечения и услуг. Программа включает годичные курсы по программированию по сертифицированной программе IT академии ПВТ Беларуси. Образовательный центр IT академия готовит высококвалифицированных специалистов, способных работать в динамично развивающейся отрасли. Центр был создан для того, чтобы удовлетворить высокий спрос рынка труда в квалифицированных IT кадрах. Наша цель - формирование и выпуск качественных IT-специалистов в короткие сроки, отвечающих современным тенденциям IT-индустрии.</p>
+				</div>
+			</div>
+				<!--Statisticts-->
+				<div class="third-block statistics">
+
+					<div class="text-statistics">
+						<h2>Статистика нашей компании</h2>
+						<p>“IT Академия” - проект Кыргызской ассоциации разработчиков программного обеспечения и услуг. Программа включает годичные курсы по программированию по сертифицированной программе IT академии ПВТ Беларуси. Образовательный центр IT академия готовит высококвалифицированных специалистов, способных работать в динамично развивающейся отрасли. Центр был создан для того, чтобы удовлетворить высокий спрос рынка труда в квалифицированных IT кадрах. Наша цель - формирование и выпуск качественных IT-специалистов в короткие сроки, отвечающих современным тенденциям IT-индустрии.</p>
+					</div>
+					 <div class="st">
+						<div class="st-objects python">
+							<div class="statistics-python count">200</div>
+							<span>Python</span>
+						</div>
+
+						<div class="st-objects php">
+							<div class="statistics-php count">500</div>
+							<span>Php</span>
+						</div>
+
+						<div class="st-objects js">
+							<div class="statistics-js count">550</div>
+							<span>JavaScript</span>
+						</div>
+
+						<div class="st-objects java">
+							<div class="statistics-java count">50</div>
+							<span>Java</span>
+						</div>
+
+						<div class="st-objects cSharp">
+							<div class="statistics-cSharp count">700</div>
+							<span>C#</span>
+						</div>
+					</div>
+
+
+				</div>
+				<!--Statisticts-->
+				<!--Work with us-->
+				<div class="fourth-block work-with-us">
+					<div class="text-work-with-us">
+						<h2>Наши работы</h2>
+					</div>	
+					<div class="work-project">				
+						<div class="projects">
+							<div class="projects-img"></div>
+							<div class="project-text">
+								<h4>Проекты</h4>
+								<p>Проект “Продвижение обучения в области ИТ для людей с особыми потребностями” реализуется Кыргызской ассоциацией разработчиков программного обеспечения и услуг (КАРПОУ) и IT Академией при поддержке Европейского Союза</p>
+							</div>
+						</div>
+						<div class="students">
+							<div class="students-img"></div>
+							<div class="students-text">
+								<h4>Студенты</h4>
+								<p>Цель проекта — расширение экономических возможностей девушек и женщин путем обучения практическим навыкам в сфере информационных технологий (ИТ). Это повысит грамотность, навыки лидерства и женского предпринимательства через IT-академию</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+		<!--Mian/body-->
+
+
+		</div>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="{%static 'kssdasite/jquery.vide.min.js'%}"></script>
+	<script  src="{%static 'kssdasite/script.js'%}"></script>
+</body>
+</html>

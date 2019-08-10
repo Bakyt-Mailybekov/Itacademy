@@ -1,0 +1,252 @@
+
+.main{
+	position: relative;
+	top: 70px;
+}
+/*first-conteiner*/
+.first-block{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	position: relative;
+	border-bottom-left-radius: 50px;
+
+}
+.main-text{
+	width: 50%;
+	height: 300px;
+	text-align: center;
+	position: absolute;
+	top: 25px;
+	left: 30%;
+	right: 30%;
+	z-index: 10
+}
+.main-text h1{
+	font-size: 5em;
+	color: white;
+	position: absolute;
+	left: 17%;
+	
+}
+.main-text p{
+	font-size: 2.1em;
+	color: white;
+	position: absolute;
+	left: -10%;
+	right: 10%;
+	top: 110px;
+	text-align: center;
+}
+.first-bg-img{
+	width: inherit;
+	height: inherit;
+	background: url("kssdasite/chegg-wave.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	filter: opacity(0.4);
+	z-index: -1;
+}
+.first-bg-video{
+	width: 100%;
+	height: 450px;
+	z-index: 10;
+}
+/*first-conteiner*/
+
+/*About us*/
+.about-us{
+	width: 100%;
+	height: 500px;	
+	position: relative;
+}
+.text-about-us{
+	width: 90%;
+	height: inherit;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	text-align: center;
+}
+.text-about-us h2{
+	font-size: 4em;
+}
+.text-about-us p{
+	font-size: 2em;
+	text-align: justify;
+    color: grey;
+}
+/*About us*/
+/*Statistics*/
+.statistics{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	
+}
+.text-statistics{
+	width: 90%;
+	height: 250px;
+	position: relative;
+	left: 5%;
+	right: 5%;
+	text-align: center;
+}
+.text-statistics h2{
+	font-size: 4em;
+}
+.text-statistics p{
+	font-size: 2em;
+	text-align: justify;
+    color: grey;
+}
+
+
+
+.st-objects{
+	width: 14.7%;
+	height: 200px;
+	position: absolute;
+	left: 5%;
+	border:2px solid #54B9FC;
+	text-align: center; 
+}
+
+.st-objects span{
+	font-size: 2.2em;
+	text-align: center;
+	line-height: 350px;
+	margin-top: 10px;
+}
+/*sass*/
+.count{
+	font-size: 3em;
+	position: absolute;
+	text-align: center;
+	border:2px solid #54B9FC;
+	border-radius: 50%;
+	padding: 20% 20%;
+	top: calc(100% - 170px);
+	left: 20%;
+	right: 20%;
+}
+
+
+.php {
+	position: absolute;
+	left:24%;
+}
+.js {
+	position: absolute;
+	left:42%;
+}
+
+
+.java {
+	position: absolute;
+	left: 60.5%;
+}
+.cSharp {
+	position: absolute;
+	left: 79%;
+}
+/*Statistics*/
+/*work-whith-us*/
+.work-with-us{
+	width: 100%;
+	height: 1000px;	
+	position: relative;
+}
+.text-work-with-us{
+	width: 90%;
+	height: 200px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	text-align: center;
+}
+.text-work-with-us h2{
+	font-size: 4em;
+}
+.work-project{
+	width: 90%;
+	height: 400px;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	margin:0 auto;
+}
+.projects{
+	width: 500px;
+	height: 400px;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	border:2px solid black;
+	margin-right: 150px;
+	margin-top: 20px;
+}
+.projects-img{
+	width:inherit;
+	height: 300px;
+	position: absolute;
+	margin: 0 auto;
+	
+}
+.project-text{
+	width: 95%;
+	height: 100px;
+	position: relative;
+	top: 290px;
+}
+.project-text h4{
+	font-size: 2em;
+	margin:3px 0;
+}
+.project-text p{
+	font-size: 1.5em;
+	text-align: justify;
+    color: grey;
+    margin:2px 0; 
+}
+.students{
+	width: 500px;
+	height: 400px;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	border:2px solid black;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+.students-img{
+	width:inherit;
+	height: 300px;
+	position: absolute;
+	margin: 0 auto;
+	
+}
+.students-text{
+	width: 95%;
+	height: 100px;
+	position: relative;
+	top: 290px;
+}
+.students-text h4{
+	font-size: 2em;
+	margin:3px 0;
+}
+.students-text p{
+	font-size: 1.5em;
+	text-align: justify;
+    color: grey;
+    margin:2px 0; 
+}
+
+
+
+
+
+

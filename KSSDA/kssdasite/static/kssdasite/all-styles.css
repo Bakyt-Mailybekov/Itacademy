@@ -1,0 +1,25 @@
+*{
+	box-sizing:border-box;
+	font-size: 10px;
+	
+}
+body{
+	/*font-family: 'Roboto','Arial', sans-serif;*/
+	
+	margin: 0px 0px;
+	padding: 0px 0px;
+
+}
+.wrap{
+	max-width: 1920px;
+	justify-content: center;
+	position:relative;
+	margin: 0 auto;
+
+	}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
