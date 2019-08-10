@@ -14,7 +14,7 @@
 	align-items: center;
 	background-color: #54B9FC;
 	position: fixed;
-	z-index: 100;
+	z-index: 1;
 }
 .menu-header{
 	width: 100%;
@@ -36,33 +36,40 @@
 
 .mobilMenu{
 	width: 100%;
-	height: 60px;
+	height: auto;
 	display:block;
 	float: right;
-	
+	background-color: #54B9FC; 
 	position:relative;
 	text-align: right;
+	z-index: 10;
 }
 .menuShow-icon{
 	position: relative;
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
 	
 }
-.mobilMenu i{
+.header i{
 	position: relative; 
-	font-size: 3.5em;
+	font-size: 4.5em;
 	color: #fff;
 
 }
 .v-menu{
 	display: block;
 	position: relative;
-	top: 25px;
 	
 }
 .mobilMenu ul {
 	display: block;
+	float: left;
+	text-align: left;
+	z-index: 20;
 	
 }
+
 
 @media screen and (min-width: 785px){
 	
@@ -70,12 +77,16 @@
 		display: none;
 		visibility: hidden;
 	}
+	.header i{
+		display: none;
+
+	}
 }
 
 @media screen and (max-width: 786px){
 	.logo{
-		width: 150px;
-		height: 20px;
+		width: 200px;
+		height: 40px;
 		
 	}
 	
@@ -84,6 +95,13 @@
 		display: none;
 		
 	}
+
+
+	.header{
+	position: relative;
+	
+}
+
 }
 
 .menu-header a{	
@@ -98,11 +116,22 @@
 	font-size: 1.6em;
 	background-color: #79C6F9;
 }
-.active a{	
+.header .active a{	
 	color: #fff;
 	font-size: 1.6em;
 	background-color: #79C6F9;
 }
+
+.mobilMenu a{	
+	color: #fff;
+	font-size: 1.8em;
+	height:30px;
+	line-height: 30px;
+	padding: 20px 20px;
+}
+
+
+
 
 
 

@@ -5,20 +5,19 @@
 }
 html{
 	scroll-behavior: smooth;
+	margin: 0px 0px;
 }
 body{
-	/*font-family: 'Roboto','Arial', sans-serif;*/
-	
 	margin: 0px 0px;
 	padding: 0px 0px;
+	font-family: 'Roboto','Arial', sans-serif;
 
 }
-.wrap{
+.wrapper{
 	max-width: 1920px;
 	justify-content: center;
 	position:relative;
 	margin: 0 auto;
-
 	}
 a{
 	text-decoration: none;
@@ -30,7 +29,7 @@ ul{
 
 @media screen and (max-width: 800px){
 	*{
-		font-size: 8px;
+		font-size: 9px;
 	}	
 	.header{
 		height: 40px;
@@ -38,9 +37,7 @@ ul{
 }
 @media screen and (max-width: 400px){
 	*{
-		font-size: 6px;
+		font-size: 7px;
 	}
-	.header{
-		height: 20px;
-	}	
+		
 }
