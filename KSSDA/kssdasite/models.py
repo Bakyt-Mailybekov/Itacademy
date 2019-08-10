@@ -2,6 +2,9 @@ from django.db import models
 from django.utils import timezone
 
 class Alumni(models.Model):
+	class Meta:
+		verbose_name_plural = 'Alumni'
+
 	first_name_alumni = models.CharField(max_length=32, primary_key=True, null=False)
 	last_name_alumni = models.CharField(max_length=32)
 	description_alumni = models.TextField(blank=True, null=True)
@@ -35,3 +38,8 @@ class Year(models.Model):
 
 	def __str__(self):
 		return self.year
+
+
+class Language(models.Model):
+	name_language = models.CharField(max_length=50, primary_key=True, null=False)
+	year_language = models.ForeignKey(Year, on_delete=models.CASCADE)
