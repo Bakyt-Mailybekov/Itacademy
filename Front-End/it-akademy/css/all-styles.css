@@ -1,0 +1,46 @@
+*{
+	box-sizing:border-box;
+	font-size: 10px;
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	/*font-family: 'Roboto','Arial', sans-serif;*/
+	
+	margin: 0px 0px;
+	padding: 0px 0px;
+
+}
+.wrap{
+	max-width: 1920px;
+	justify-content: center;
+	position:relative;
+	margin: 0 auto;
+
+	}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0px 0px;
+}
+
+@media screen and (max-width: 800px){
+	*{
+		font-size: 8px;
+	}	
+	.header{
+		height: 40px;
+	}
+}
+@media screen and (max-width: 400px){
+	*{
+		font-size: 6px;
+	}
+	.header{
+		height: 20px;
+	}	
+}
