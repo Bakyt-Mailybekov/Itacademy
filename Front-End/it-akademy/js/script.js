@@ -7,7 +7,7 @@ $(document).on('click','ul li',function(){
 var control=1;
 $(window).scroll(function(){
 
-var topWindow = $(window).scrollTop(),height=200;
+var topWindow = $(window).scrollTop(),height=800;
 	
     if(topWindow >= height && control==1){
 		$('.count').each(function(){
