@@ -15,10 +15,11 @@
 	    <h1>About Page !!!</h1>
 			{% for alumni in alumnis %}
 				<img src="{{ alumni.picture_alumni.url }}" width="240"> 
-				<h3>{{ alumni.first_name_alumni }} {{ alumni.last_name_alumni }} </h3>
-				<p>{{ alumni.email_alumni }}</p>
-				<p>{{ alumni.phone_number_alumni }}</p>
-				<p>{{ alumni.email_alumni }}</p>
+				<h3>{{ alumni.first_name_alumni }} {{ alumni.last_name_alumni }} </h3>        
+        <p>{{ alumni.description_alumni }}</p>
+				<p>{{ alumni.email_alumni }} {{ alumni.phone_number_alumni }}</p>
+        <p>{{ alumni.github_link_alumni }}</p>
+        <p>{{ alumni.cv_alumni }}</p>
 			{% endfor %}
 	</div>
 
