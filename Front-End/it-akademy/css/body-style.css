@@ -53,10 +53,37 @@
 	
 }
 .main-text p{
-	font-size: 2.1em;
+	font-size: 1.8em;
+	font-style: italic;
 	color: white;
 	text-align: center;
 	top: 35%;
+	line-height: 1.8em;
+}
+.main-text button{
+	margin: 0px auto;
+	color: white;
+	width: 150px;
+	height: 40px;
+	border-radius: 25px;
+	border:2px solid #0ea195;
+	font-size: 1.3em;
+
+}
+ button:hover{
+	background-color: #0ea195;
+
+}
+
+.first-block .conteiner-feedback{
+	margin: 0px 40%;
+	border:2px solid #0ea195;
+	border-radius: 15px;
+	position: fixed;
+	top: 25%;
+	display: none;
+	background-color:#54B9FC;
+	z-index: 2;
 }
 
 /*first-conteiner*/
@@ -89,7 +116,7 @@
 	font-size: 4em;
 }
 .text-about-us p{
-	font-size: 1.8em;
+	
 	text-align: justify;
     color: grey;
 }
@@ -210,7 +237,7 @@
 	font-size: 4em;
 }
 .text-statistics p{
-	font-size: 2em;
+
 	text-align: justify;
     color: grey;
 }
@@ -325,7 +352,7 @@
 	margin:3px 10px;
 }
 .project-text p{
-	font-size: 1.5em;
+	
 	text-align: justify;
 	text-align: left;
     color: grey;
@@ -361,7 +388,7 @@
 	margin:3px 10px; 
 }
 .students-text p{
-	font-size: 1.5em;
+	
 	text-align: justify;
     color: grey;
     margin:2px 0; 
@@ -399,7 +426,7 @@
 	position: relative;
 }
 .text-contacts p{
-	font-size: 2em;
+	
 	text-align: center;
 	margin-top: 3px;
     color: grey;

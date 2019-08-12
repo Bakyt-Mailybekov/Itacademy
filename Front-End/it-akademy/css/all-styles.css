@@ -19,12 +19,22 @@ body{
 	position:relative;
 	margin: 0 auto;
 	}
+
+
 a{
 	text-decoration: none;
 }
 ul{
 	list-style: none;
 	padding: 0px 0px;
+}
+
+p{
+	font-size: 13px;
+	font-style: italic;
+	line-height: 150%;
+	word-spacing: 4px;
+	letter-spacing: 2px;
 }
 
 @media screen and (max-width: 800px){

@@ -36,11 +36,7 @@ $mail->Body    = '' .$name . ' оставил заявку, его телефо�
 $mail->AltBody = '';
 	
 
-	if(!$mail->send()) {
-    echo 'Error';
-	} else {
-	    echo 'Done';
-	}
+	
 
 	$token = '909109368:AAG96XBf_wrV1-nqiCKwoAemXUkVeKVGvDg';
 	$chat_id = '-358645678';
@@ -55,11 +51,11 @@ $mail->AltBody = '';
 	};
 
 	$sendTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
-	/*if($sendTelegram){
-		header('Location: index.html');
+	if($sendTelegram){
+		header('Location: it-academy.html');
 	}else {
 		echo "Error!!!";
-	}*/
+	}
 
 	
 

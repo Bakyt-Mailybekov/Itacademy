@@ -3,6 +3,7 @@ $(document).on('click','ul li',function(){
 	$(this).addClass('active').siblings().removeClass('active');
 });
 
+
 //statistics
 var control=1;
 $(window).scroll(function(){
@@ -49,6 +50,13 @@ $('.menuShow-icon').click(function(){
 		$('.v-menu').hide();
 	else $('.v-menu').show();
 });
+
+$('.btn_blank').click(function(){
+	
+		 $('.first-block .conteiner-feedback').show();
+});
+
+
 
 window.onresize = function(event){
 	$('.v-menu').hide();
