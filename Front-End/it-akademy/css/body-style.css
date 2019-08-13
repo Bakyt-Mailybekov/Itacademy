@@ -12,6 +12,8 @@
 	height: 100vh;
 	text-align: center;
 	position: relative;
+	
+
 }
 .first-bg-img{
 	width: 100%;
@@ -23,13 +25,13 @@
 	position: absolute;
 	top: -1%;
 	filter: opacity(0.4);
-	z-index: -1;
+	z-index: -2;
 }
 .first-bg-video{
 	width: 100%;
 	height: 450px;
 	position: absolute;
-	z-index: -1;
+	
 }
 .main-text{
 	width: 50%;
@@ -42,7 +44,7 @@
 	align-items: center;
 	top: 20%;
 	margin: 0px auto;
-	z-index: 1;
+	
 }
 .main-text h1{
 	font-size: 5em;
@@ -68,12 +70,13 @@
 	border-radius: 25px;
 	border:2px solid #0ea195;
 	font-size: 1.3em;
-
+	background-color:orange;
 }
  button:hover{
 	background-color: #0ea195;
 
 }
+
 
 .first-block .conteiner-feedback{
 	margin: 0px 40%;
@@ -85,6 +88,15 @@
 	background-color:#54B9FC;
 	z-index: 2;
 }
+.conteiner-feedback span i{
+	position: absolute;
+	font-size: 20px;
+	color: orange;
+	top: 5px;
+	left: 92%;
+}
+
+
 
 /*first-conteiner*/
 
@@ -92,6 +104,7 @@
 .about-us{
 	width: 100%;
 	height: auto;
+	min-height: 500px;
 	position: relative;
 }
 .about-us-conteiner{
@@ -222,15 +235,15 @@
 .statistics{
 	width: 100%;
 	height: auto;
-	position: relative;
-	
+	position: relative;	
 }
 .text-statistics{
 	width: 90%;
 	height: auto;
 	text-align: center;
 	margin-left: 5%;
-	margin-top: 200px;
+	position: relative;
+	top:70px;
 
 }
 .text-statistics h2{
@@ -242,6 +255,8 @@
     color: grey;
 }
 .st{
+	position: relative;
+	top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -256,7 +271,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 70px;
+	margin-top: 30px;
 	width: 15%;
 	height: 200px;
 	min-width: 180px;
@@ -343,9 +358,9 @@
 	
 }
 .project-text{
-	width: 95%;
+	width: 90%;
 	height: auto;
-	
+	margin: 5px auto;
 }
 .project-text h4{
 	font-size: 2.2em;
@@ -382,6 +397,7 @@
 .students-text{
 	width: 95%;
 	height: auto;
+	margin: 5px auto;
 }
 .students-text h4{
 	font-size: 2.2em;
@@ -395,11 +411,13 @@
 }
 
 .work-project span{
-	font-size: 1.4em;
+	position: relative;
+	font-size: 1.5em;
 	color: blue;
-	margin-top: 30px;
+	margin-bottom:  10px;
+	margin-right: 20px;
 	text-align: right;
-	margin-left: 70%;
+	float: right;
 }
 
 /*work-whith-us*/
@@ -454,7 +472,7 @@
 }
 
 .text-kara-balta {
-	margin-left: 2%;
+	margin-left:2%;
 }
 
 .city ul li{
@@ -477,4 +495,168 @@
 }
 
 
+@media screen and (max-width: 600px) {
+	/*First conteiner*/
+	.main-text{
+		width: 80%;
+		top: 5%;
+	}
+
+	.first-block .conteiner-feedback{
+		margin: 0px 10%;
+		top: 15%;
+	}
+
+	/*second-conteiner*/
+	.text-about-us{
+		width: 100%;
+	}
+
+	/*fourth-block*/
+	.show-border{
+		width: 90%;
+		height: auto;
+		text-align: left;
+		/*border:2px solid black;*/
+		margin: 20px auto;
+		min-width: 300px;
+	}
+
+	.text-kara-balta {
+		margin:10px auto;
+	}
+	
+	.city{
+		width: 60%;
+	}
+
+
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+	/*First conteiner*/
+	.main-text{
+		width: 70%;
+		top: 20%;
+	}
+	.first-block .conteiner-feedback{
+		margin: 0px 20%;
+		
+	}
+	/*second-conteiner*/
+	.text-about-us{
+		width: 100%;
+	}
+
+	/*fourth-block*/
+	.show-border{
+		width: 90%;
+		height: auto;
+		text-align: left;		
+		margin: 20px auto;
+		min-width: 300px;
+	}
+
+	.text-kara-balta {
+		margin:10px auto;
+	}
+	
+	.city{
+		width: 60%;
+	}
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 769px) {
+	/*First conteiner*/
+	.main-text{
+		width: 65%;
+		top: 20%;
+	}
+	.first-block .conteiner-feedback{
+		margin: 0px 25%;
+		
+	}
+	/*second-conteiner*/
+	.text-about-us{
+		width: 30%;
+	}
+
+	/*fourth-block*/
+	.show-border{
+		width: 40%;
+		height: auto;
+		text-align: left;
+		margin: 5px auto;
+	}
+	.w-img{
+		height: 200px;
+	}
+	.text-kara-balta {
+		margin:10px auto;
+	}
+	.city{
+		width: 30%;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	/*First conteiner*/
+	.main-text{
+		width: 60%;
+		top: 20%;
+	}
+	.first-block .conteiner-feedback{
+		margin: 0px 30%;
+		
+	}
+	/*second-conteiner*/
+	.show-border{
+		width: 40%;
+		height: auto;
+		text-align: left;
+		margin: 5px auto;
+	}
+	.w-img{
+		height: 250px;
+	}
+	.city{
+		width: 30%;
+	}
+	.text-kara-balta {
+		margin-left: 2%;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+	/*First conteiner*/
+	.main-text{
+		width: 55%;
+		top: 20%;
+	}
+	.first-block .conteiner-feedback{
+		margin: 0px 35%;
+		
+	}
+	/*second-conteiner*/
+	.text-about-us{
+		width: 45%;
+	}
+	.w-img{
+		height: 300px;
+	}
+	.city{
+		width: 30%;
+	}
+	.text-kara-balta {
+		margin-left: 2%;
+	}
+}
 

@@ -1,6 +1,6 @@
 .banner{
-	width: 100%
-	height:auto;
+	width: 100%;
+	height: auto;
 	position: relative;
 }
 
@@ -14,7 +14,7 @@
 	align-items: center;
 	background-color: #54B9FC;
 	position: fixed;
-	z-index: 1;
+	z-index: 11;
 }
 .menu-header{
 	width: 100%;
@@ -22,7 +22,6 @@
 	justify-content: flex-end;
 	position: relative;
 }
-
 .logo{
 	width: 200px;
 	height: 40px;
@@ -71,39 +70,6 @@
 }
 
 
-@media screen and (min-width: 785px){
-	
-	.mobilMenu{
-		display: none;
-		visibility: hidden;
-	}
-	.header i{
-		display: none;
-
-	}
-}
-
-@media screen and (max-width: 786px){
-	.logo{
-		width: 200px;
-		height: 40px;
-		
-	}
-	
-	
-	.h-menu{
-		display: none;
-		
-	}
-
-
-	.header{
-	position: relative;
-	
-}
-
-}
-
 .menu-header a{	
 	color: #fff;
 	font-size: 1.5em;
@@ -128,6 +94,110 @@
 	height:30px;
 	line-height: 30px;
 	padding: 20px 20px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+	.logo{
+		width: 130px;
+		height: 30px;
+		
+	}
+	
+	
+	.h-menu{
+		display: none;
+		
+	}
+
+
+	.header{
+		position: relative;
+		height: 55px;
+	
+   }
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	
+	.header i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	.mobilMenu{
+		top: 45px;
+	}
+	
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.header{
+		position: relative;
+		height: 60px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
 }
 
 

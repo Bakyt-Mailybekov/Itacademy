@@ -13,6 +13,12 @@ $email = $_POST['user_email'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
+if($name == '' || $phone == '' || $email == ''){
+	echo "Пожалуйста, заполните все поля! <a href='index.html'>Главная страница</a>";
+}
+else{
+
+
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -52,11 +58,11 @@ $mail->AltBody = '';
 
 	$sendTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
 	if($sendTelegram){
-		header('Location: it-academy.html');
+		header('Location: index.html');
 	}else {
 		echo "Error!!!";
 	}
 
-	
+}
 
 ?>

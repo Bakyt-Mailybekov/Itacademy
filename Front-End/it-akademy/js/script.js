@@ -52,8 +52,10 @@ $('.menuShow-icon').click(function(){
 });
 
 $('.btn_blank').click(function(){
-	
 		 $('.first-block .conteiner-feedback').show();
+});
+$('.far').click(function(){
+		 $('.first-block .conteiner-feedback').hide();
 });
 
 
