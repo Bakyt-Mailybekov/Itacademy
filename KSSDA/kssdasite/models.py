@@ -14,7 +14,7 @@ class Year(models.Model):
 	def __str__(self):
 		return self.year
 
-
+'''
 class Language(models.Model):
 	name_language = models.CharField(max_length=50)
 	year_language = models.ForeignKey(Year, on_delete=models.CASCADE)
@@ -59,3 +59,4 @@ class Alumni(models.Model):
 
 	def __str__(self):
 		return self.first_name_alumni + " " + self.last_name_alumni
+'''
