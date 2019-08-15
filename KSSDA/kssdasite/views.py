@@ -8,6 +8,14 @@ def home(request):
 
 def about(request):
     alumni = Alumni.objects.all()
-    return render(request, 'kssdasite/about.html', {'alumnis': alumni})
 
-    
+    search_query = request.GET.get('search', '')
+    if search_query:
+        alumni = Alumni.objects.filter(first_name_alumni=search_query)
+    else:
+        alumni = Alumni.objects.all()
+
+
+
+
+    return render(request, 'kssdasite/about.html', {'alumnis': alumni})

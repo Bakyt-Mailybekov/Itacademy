@@ -14,14 +14,19 @@
   	<div class="container">
 	    <h1>About Page !!!</h1>
 			{% for alumni in alumnis %}
-				<img src="{{ alumni.picture_alumni.url }}" width="240"> 
-				<h3>{{ alumni.first_name_alumni }} {{ alumni.last_name_alumni }} </h3>        
+				<img src="{{ alumni.picture_alumni.url }}" width="240">
+				<h3>{{ alumni.first_name_alumni }} {{ alumni.last_name_alumni }} </h3>
         <p>{{ alumni.description_alumni }}</p>
 				<p>{{ alumni.email_alumni }} {{ alumni.phone_number_alumni }}</p>
         <p>{{ alumni.github_link_alumni }}</p>
         <p>{{ alumni.cv_alumni }}</p>
 			{% endfor %}
 	</div>
+
+  <form class="form-inline my-2 my-lg-0" action="{% url 'About' %}">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-lable="Search" name="search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
