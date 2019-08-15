@@ -15,7 +15,4 @@ def about(request):
     else:
         alumni = Alumni.objects.all()
 
-
-
-
     return render(request, 'kssdasite/about.html', {'alumnis': alumni})
