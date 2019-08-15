@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,11 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/all-styles.css">
-	<link rel="stylesheet" type="text/css" href="css/header-style.css">
-	<link rel="stylesheet" type="text/css" href="css/body-style.css">
-	<link rel="stylesheet" type="text/css" href="css/footer-style.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/css/all-styles.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/css/header-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/css/body-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/css/footer-style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kssdasite/css/font-awesome/css/all.min.css'%}">
 </head>
 <body>
 	
@@ -19,7 +20,7 @@
 	<div class="wrapper">	
 		<div class="banner">
 			<div class="header">
-				<a href=""><img class="logo" src="img/logo.png" alt="IT-academy"></a>
+				<a href=""><img class="logo" src="{% static 'kssdasite/img/logo.png'%}" alt="IT-academy"></a>
 				<!--Navbar-->
 				<div class="menu-header">
 					<div class="h-menu">
@@ -50,7 +51,7 @@
 	<!--Header-->
 	<!--Mian/body-->
 		<div class="main">
-				<div class="first-block" data-vide-bg="video/bg-video/Fade-To-Black">
+				<div class="first-block" data-vide-bg="{% static 'kssdasite/video/bg-video/Fade-To-Black' %}">
 					<div class="main-text" >
 						<h1>WELCOME</h1>
 						<p>Освойте одну из самых востребованных и высокооплачиваемых профессий всего за 9 месяцев по сертифицированной программе IT академии ПВТ Беларуси</p>
@@ -345,7 +346,7 @@
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="js/jquery.vide.min.js"></script>
-	<script  src="js/script.js"></script>
+	<script src="{%static 'kssdasite/js/jquery.vide.min.js'%}"></script>
+	<script  src="{%static 'kssdasite/js/script.js'%}"></script>
 </body>
 </html>

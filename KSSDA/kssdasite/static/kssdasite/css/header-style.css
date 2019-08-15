@@ -1,0 +1,208 @@
+.banner{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	max-width: 1920px;
+	min-width: 300px;
+	margin-top: 0px;
+	display: flex;
+	align-items: center;
+	background-color: #54B9FC;
+	position: fixed;
+	z-index: 11;
+}
+.menu-header{
+	width: 100%;
+	height: 60px;
+	justify-content: flex-end;
+	position: relative;
+}
+.logo{
+	width: 200px;
+	height: 40px;
+	position: relative;
+	align-items: center;
+}
+.header ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mobilMenu{
+	width: 100%;
+	height: auto;
+	display:block;
+	float: right;
+	background-color: #54B9FC; 
+	position:relative;
+	text-align: right;
+	z-index: 10;
+}
+.menuShow-icon{
+	position: relative;
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+	
+}
+.header i{
+	position: relative; 
+	font-size: 4.5em;
+	color: #fff;
+
+}
+.v-menu{
+	display: block;
+	position: relative;
+	
+}
+.mobilMenu ul {
+	display: block;
+	float: left;
+	text-align: left;
+	z-index: 20;
+	
+}
+
+
+.menu-header a{	
+	color: #fff;
+	font-size: 1.5em;
+	height: 40px;
+	line-height: 40px;
+	padding: 20px 20px;
+}
+.menu-header a:hover{	
+	color: #fff;
+	font-size: 1.6em;
+	background-color: #79C6F9;
+}
+.header .active a{	
+	color: #fff;
+	font-size: 1.6em;
+	background-color: #79C6F9;
+}
+
+.mobilMenu a{	
+	color: #fff;
+	font-size: 1.8em;
+	height:30px;
+	line-height: 30px;
+	padding: 20px 20px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+	.logo{
+		width: 130px;
+		height: 30px;
+		
+	}
+	
+	
+	.h-menu{
+		display: none;
+		
+	}
+
+
+	.header{
+		position: relative;
+		height: 55px;
+	
+   }
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	
+	.header i{
+		display: block;
+
+	}
+	.h-menu{
+		display: none;
+		
+	}
+	.mobilMenu{
+		top: 45px;
+	}
+	
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.header{
+		position: relative;
+		height: 55px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.header{
+		position: relative;
+		height: 60px;
+	}
+	.header i{
+		display: none;
+
+	}
+	.h-menu{
+		display: block;
+		
+	}
+	.mobilMenu{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
