@@ -3,13 +3,13 @@ from django.utils import timezone
 
 
 class Year(models.Model):
-	YEAR_CHOICES = (
+	'''YEAR_CHOICES = (
 		('2016-2017', '2016-2017'),
 		('2017-2018', '2017-2018'),
 		('2018-2019', '2018-2019'),
 		('2019-2020', '2019-2020'),
-	)
-	year = models.CharField(max_length=50, choices = YEAR_CHOICES)
+	)'''
+	year = models.CharField(max_length=50)
 
 	def __str__(self):
 		return self.year
@@ -54,7 +54,7 @@ class Alumni(models.Model):
 	phone_number_alumni = models.CharField(max_length=32, blank=True, null=True)
 	github_link_alumni = models.URLField(blank=True, null=True)
 	cv_alumni = models.FileField(upload_to=upload_location, default="")
-	project_alumni = models.ForeignKey(Project, default="", on_delete=models.CASCADE)
+	language_alumni = models.ForeignKey(Language, default="", on_delete=models.CASCADE, blank=True)
 
 
 	def __str__(self):
